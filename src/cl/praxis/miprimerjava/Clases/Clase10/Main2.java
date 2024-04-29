@@ -1,4 +1,4 @@
-package cl.praxis.miprimerjava.Clases.Dia10;
+package cl.praxis.miprimerjava.Clases.Clase10;
 
 public class Main2 {
     public static void main(String[] args) {
