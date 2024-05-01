@@ -14,13 +14,13 @@ public class Multiplos {
         int suma = Suma(Multiplos3);
         double promedio = Promedio(Multiplos3);
 
-        System.out.println("El resultado del promedio es: " + suma + " y el del promedio es: " + promedio);
+        System.out.println("El resultado de los multiplos de 3 es: " + suma + " y el del promedio es: " + promedio);
 
     }
 
-    public static int Suma(ArrayList<Integer> num) {
+    public static int Suma(ArrayList<Integer> Multiplo3) {
         int suma = 0;
-        for (int numero : num) {
+        for (int numero : Multiplo3) {
             if (numero % 3 == 0) {
                 suma += numero;
             }
@@ -28,10 +28,10 @@ public class Multiplos {
         return suma;
     }
 
-    public static double Promedio(ArrayList<Integer> num) {
+    public static double Promedio(ArrayList<Integer> promedio) {
         int suma = 0;
         int contador = 0;
-        for (int numero : num) {
+        for (int numero : promedio) {
             if (numero % 3 == 0) {
                 suma += numero;
                 contador++;
