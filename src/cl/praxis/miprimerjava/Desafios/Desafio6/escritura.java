@@ -1,7 +1,6 @@
 package cl.praxis.miprimerjava.Desafios.Desafio6;
 
 import java.io.*;
-import java.io.BufferedReader;
 import java.util.ArrayList;
 
 public class escritura {
@@ -50,29 +49,6 @@ public class escritura {
             System.out.println("Error al crear el archivo.");
             e.printStackTrace();
 
-        }
-
-    }
-    public static void buscarTexto (String nombreFichero, String texto) throws FileNotFoundException {
-
-        File archivo = new File("src/directorio/fichero.txt");
-
-        if (!archivo.exists()) {
-            System.out.println("El fichero ingresado no existe");
-            return;
-        }
-        try (BufferedReader br = new BufferedReader(new FileReader(archivo))) {
-            String palabras;
-            int contador = 0;
-            while ((palabras = br.readLine()) != null) {
-                if (palabras.contains(texto)) {
-                    contador++;
-                }
-            }
-            System.out.println("La palabra \"" + texto + "\" se encuentra " + contador + " veces en el archivo.");
-        } catch (IOException e) {
-            System.out.println("Error al leer el archivo.");
-            e.printStackTrace();
         }
 
     }
