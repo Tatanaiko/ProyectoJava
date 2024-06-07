@@ -1,1 +1,1 @@
-Producto{articulo='dsefsef', precio='3243242', descripcion='dfsdfsdf', codigo='342342', talla='3232', marca='efsedfs', color='sdfsdf'}
+Producto{articulo='asdawwd', precio='asdad', descripcion='awsdwada', codigo='awdadaws', talla='wdawdaw', marca='wadawda', color='wsdawsda'}

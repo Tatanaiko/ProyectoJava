@@ -25,6 +25,7 @@ public class ProductoServicio {
     public void listarProductos () {
         if (listaProductos.isEmpty()){
             System.out.println("No existen productos. Porfavor añade productos");
+            Utilidad.espacio();
         }else {
             System.out.println("--------------------Lista de Productos----------------------");
             for (Producto producto : listaProductos) {
@@ -37,6 +38,7 @@ public class ProductoServicio {
                 System.out.println("Color: " + producto.getColor());
                 System.out.println("---------------------------------------------------------");
             }
+            Utilidad.espacio();
         }
     }
 
@@ -65,9 +67,12 @@ public class ProductoServicio {
 
         Producto nuevoProducto = new Producto(articulo, precio, descripcion, codigo, talla, marca, color);
         listaProductos.add(nuevoProducto);
-
+        Utilidad.espacio();
         System.out.println("Producto agregado correctamente ");
+        Utilidad.espacio();
         listarProductos();
+        Utilidad.espacio();
+        Utilidad.espacio();
     }
 
 

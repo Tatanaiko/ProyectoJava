@@ -23,14 +23,17 @@ public class Menu {
 
         do {
             System.out.println("----------------Menú--------------");
+            Utilidad.espacio();
             System.out.println("1.- Listar Producto");
             System.out.println("2.- Agregar Producto");
             System.out.println("3.- Exportar Datos");
             System.out.println("4.- Salir");
+            Utilidad.espacio();
+            System.out.println("----------------------------------");
+            Utilidad.espacio();
             System.out.println("Ingrese una opcion: ");
             opcion = sc.nextInt();
             sc.nextLine();
-
             switch (opcion) {
                 case 1:
                     productoServicio.listarProductos();

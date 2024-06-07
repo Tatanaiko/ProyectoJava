@@ -6,14 +6,14 @@ public class Utilidad {
     public static void esperar() {
 
         try {
-            Thread.sleep(2000);
+            Thread.sleep(1000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
     }
 
-    public static void limpiar() {
-        System.out.println("/n /n /n /n /n /n");
+    public static void limpiarPantalla() {
+        System.out.println("\n \n \n \n \n \n \n \n \n \n");
     }
 
     public static void espacio() {

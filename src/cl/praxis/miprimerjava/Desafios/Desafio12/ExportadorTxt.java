@@ -13,6 +13,7 @@ public class ExportadorTxt extends ExportarTxt {
 
         if(listaProductos.isEmpty()){
             System.out.println("No existen productos para exportar. Por favor agrega productos.");
+            Utilidad.espacio();
         }else {
 
             try (BufferedWriter writer = new BufferedWriter(new FileWriter(nombreArchivo))) {
