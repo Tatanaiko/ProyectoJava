@@ -1,6 +1,7 @@
 package cl.praxis.miprimerjava.Desafios.Desafio12;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class ProductoServicio {
 
@@ -22,17 +23,51 @@ public class ProductoServicio {
     }
 
     public void listarProductos () {
-        System.out.println("--------------------Lista de Productos----------------------");
-        for (Producto producto : listaProductos) {
-            System.out.println(getListaProductos());
-            System.out.println("---------------------------------------------------------");
+        if (listaProductos.isEmpty()){
+            System.out.println("No existen productos. Porfavor añade productos");
+        }else {
+            System.out.println("--------------------Lista de Productos----------------------");
+            for (Producto producto : listaProductos) {
+                System.out.println("Nombre del producto: " + producto.getArticulo());
+                System.out.println("Precio: " + producto.getPrecio());
+                System.out.println("Descripción: " + producto.getDescripcion());
+                System.out.println("Código: " + producto.getCodigo());
+                System.out.println("Talla: " + producto.getTalla());
+                System.out.println("Marca: " + producto.getMarca());
+                System.out.println("Color: " + producto.getColor());
+                System.out.println("---------------------------------------------------------");
+            }
         }
     }
 
     public void agregarProductos () {
-        System.out.println("---------------Productos agregados---------------------------");
-        listaProductos.add(new Producto());
-        System.out.println("--------------------------------------------------------------");
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Ingrese el nombre del producto: ");
+        String articulo = scanner.nextLine();
+
+        System.out.println("Ingrese el precio del producto: ");
+        String precio = scanner.nextLine();
+
+        System.out.println("Ingrese la descripción del producto: ");
+        String descripcion = scanner.nextLine();
+
+        System.out.println("Ingrese el código del producto: ");
+        String codigo = scanner.nextLine();
+
+        System.out.println("Ingrese la talla del producto: ");
+        String talla = scanner.nextLine();
+
+        System.out.println("Ingrese la marca del producto: ");
+        String marca = scanner.nextLine();
+
+        System.out.println("Ingrese el color del producto: ");
+        String color = scanner.nextLine();
+
+        Producto nuevoProducto = new Producto(articulo, precio, descripcion, codigo, talla, marca, color);
+        listaProductos.add(nuevoProducto);
+
+        System.out.println("Producto agregado correctamente ");
+        listarProductos();
     }
 
 

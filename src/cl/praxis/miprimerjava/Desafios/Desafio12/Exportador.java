@@ -1,9 +1,10 @@
 package cl.praxis.miprimerjava.Desafios.Desafio12;
 
-public class Exportador {
+import java.io.IOException;
+import java.util.ArrayList;
 
-    public abstract void exportar() {
+public abstract class Exportador {
 
-    }
+    public abstract void exportar(ArrayList<Producto> listaProductos) throws IOException;
 
 }

@@ -6,7 +6,7 @@ public class Utilidad {
     static Scanner sc = new Scanner(System.in);
 
     public static void limpiar() {
-        System.out.println("");
+        System.out.println("/n /n /n /n /n /n");
     }
 
     public static void cerrar() {
